@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Bank App</string>
+    <string name="create_new_bank">Create new bank</string>
+    <string name="view_bank_list">View bank list</string>
+    <string name="transfer_money">Transactions</string>
+    <string name="bank_location">Bank location</string>
+    <string name="enter_bank_name">Enter bank name</string>
+    <string name="bank_name">Bank name</string>
+    <string name="branch_name">Branch Name</string>
+    <string name="enter_routing_number">Enter routing number</string>
+    <string name="routing_number">Routing Number</string>
+    <string name="create_bank">Create Bank</string>
+    <string name="enter_branch_name">Enter branch name</string>
+    <string name="routing_number_card">Routing Number:</string>
+    <string name="branch_name_card">Branch Name:</string>
+    <string name="bank_name_card">Bank Name:</string>
+    <string name="update_info">Update Info</string>
+    <string name="make_transactions">Make Transaction</string>
+    <string name="from_branch_name">From Branch Name</string>
+    <string name="from_bank_name">From Bank Name</string>
+    <string name="to_branch_name">To Branch Name</string>
+    <string name="transaction_amount">Transaction Amount</string>
+    <string name="enter_transaction_amount">Enter transaction amount</string>
+    <string name="submit">Submit</string>
+    <string name="transaction_id">Transaction ID:</string>
+    <string name="date_time">Date/Time:</string>
+    <string name="transaction_amount_c">Transaction Amount:</string>
+    <string name="conformation">Conformation !!!</string>
+    <string name="conMsg">Are you sure to delete ?</string>
+</resources>
