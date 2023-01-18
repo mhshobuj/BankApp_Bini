@@ -25,6 +25,10 @@ import com.mhs.bankapp.SQLdb.DataBaseHelper;
 
 import java.util.ArrayList;
 
+/**
+ * Developed by Md Mehedi Hasan
+ * Date: 18-01-23
+ */
 public class TransactionsMoney extends AppCompatActivity {
     private TextView toolbarText;
     private ImageView imgBack;
@@ -39,7 +43,6 @@ public class TransactionsMoney extends AppCompatActivity {
         setContentView(R.layout.activity_transactions_money);
 
         initViews();
-
     }
 
     private void initViews() {
@@ -55,7 +58,6 @@ public class TransactionsMoney extends AppCompatActivity {
 
         //recycler view initialization
         transaction_recycler_view.setLayoutManager(new LinearLayoutManager(this));
-
         toolbarText.setText("Transactions");
 
         //get item from bd and pass value in adapter

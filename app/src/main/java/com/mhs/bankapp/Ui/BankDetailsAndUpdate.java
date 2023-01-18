@@ -15,6 +15,10 @@ import android.widget.Toast;
 import com.mhs.bankapp.R;
 import com.mhs.bankapp.SQLdb.DataBaseHelper;
 
+/**
+ * Developed by Md Mehedi Hasan
+ * Date: 18-01-23
+ */
 public class BankDetailsAndUpdate extends AppCompatActivity {
     private int bank_id;
     private TextView toolbarText;
@@ -40,6 +44,7 @@ public class BankDetailsAndUpdate extends AppCompatActivity {
     }
 
     private void initViews() {
+        //Id initialization
         toolbarText = findViewById(R.id.toolbarText);
         imgBack = findViewById(R.id.imgBack);
 
@@ -48,6 +53,7 @@ public class BankDetailsAndUpdate extends AppCompatActivity {
         edtRoutingNum = findViewById(R.id.edtRoutingNum);
         btnUpdateInfo = findViewById(R.id.btnUpdateInfo);
 
+        //set toolbar name
         toolbarText.setText("Bank Details & Update");
 
         //SQL db initialization
@@ -61,8 +67,8 @@ public class BankDetailsAndUpdate extends AppCompatActivity {
             updateBankInfo();
         });
     }
-
     private void updateBankInfo() {
+        //get data from edit text filed
         String bankName = edtBankName.getText().toString();
         String branchName = edtBranchName.getText().toString();
         String routingNumber = edtRoutingNum.getText().toString();
@@ -78,6 +84,7 @@ public class BankDetailsAndUpdate extends AppCompatActivity {
             edtRoutingNum.requestFocus();
             edtRoutingNum.setError(error_txt);
         }else {
+            //update date
             Boolean updateDate = dbHelper.updateBankInfo(String.valueOf(bank_id),bankName, branchName, routingNumber);
             if (updateDate){
                 startActivity(new Intent(BankDetailsAndUpdate.this, ViewBankList.class));
@@ -90,6 +97,7 @@ public class BankDetailsAndUpdate extends AppCompatActivity {
         }
     }
 
+    //set value from db
     private void setBankValue() {
         Cursor cursor = dbHelper.getDataByID(String.valueOf(bank_id));
         if (cursor.getCount() == 0){

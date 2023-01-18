@@ -17,6 +17,10 @@ import com.mhs.bankapp.SQLdb.DataBaseHelper;
 
 import java.util.ArrayList;
 
+/**
+ * Developed by Md Mehedi Hasan
+ * Date: 18-01-23
+ */
 public class ViewBankList extends AppCompatActivity {
     private RecyclerView bank_list_recycler_view;
     private ArrayList<BankListModel> bankListModels;
@@ -32,6 +36,7 @@ public class ViewBankList extends AppCompatActivity {
         initViews();
     }
     private void initViews() {
+        //id initialization
         toolbarText = findViewById(R.id.toolbarText);
         imgBack = findViewById(R.id.imgBack);
         bank_list_recycler_view = findViewById(R.id.bank_list_recycler_view);

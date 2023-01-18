@@ -33,6 +33,10 @@ import com.mhs.bankapp.Common.Constants;
 import com.mhs.bankapp.Preference.GetNearbyPlacesData;
 import com.mhs.bankapp.R;
 
+/**
+ * Developed by Md Mehedi Hasan
+ * Date: 18-01-23
+ */
 public class ShowNearestBank extends AppCompatActivity implements OnMapReadyCallback {
     private GoogleMap mMap;
     private FusedLocationProviderClient fusedLocationProviderClient;
@@ -40,7 +44,6 @@ public class ShowNearestBank extends AppCompatActivity implements OnMapReadyCall
     private double lat, lng;
     private AppCompatButton find_btn;
     private AppCompatEditText edtRadius;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

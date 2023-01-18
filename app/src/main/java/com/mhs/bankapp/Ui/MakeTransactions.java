@@ -25,6 +25,10 @@ import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
+/**
+ * Developed by Md Mehedi Hasan
+ * Date: 18-01-23
+ */
 public class MakeTransactions extends AppCompatActivity {
     private TextView toolbarText;
     private ImageView imgBack;
@@ -145,11 +149,9 @@ public class MakeTransactions extends AppCompatActivity {
         imgBack.setOnClickListener(view -> {
             finish();
         });
-
     }
 
     private void makeTransaction() {
-
         String t_amount = edtTransactionAmount.getText().toString().trim();
         String error_txt = "Required!!";
         if (selectFromBankName.equals("-- Please Select --")) {

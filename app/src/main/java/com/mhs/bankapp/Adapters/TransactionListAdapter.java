@@ -14,6 +14,10 @@ import com.mhs.bankapp.R;
 
 import java.util.ArrayList;
 
+/**
+ * Developed by Md Mehedi Hasan
+ * Date: 18-01-23
+ */
 public class TransactionListAdapter extends RecyclerView.Adapter<TransactionListAdapter.MyViewHolder> {
 
     private ArrayList<TransactionListModel> transactionListModels;

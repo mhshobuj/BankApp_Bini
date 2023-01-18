@@ -32,6 +32,7 @@ public class CreateBank extends AppCompatActivity {
     }
 
     private void initViews() {
+        //Id initialization
         toolbarText = findViewById(R.id.toolbarText);
         imgBack = findViewById(R.id.imgBack);
 
@@ -75,14 +76,17 @@ public class CreateBank extends AppCompatActivity {
             Boolean insert = db.createNewBank(bankName, branchName, routingNumber);
             if (insert) {
                 Toast.makeText(CreateBank.this, "Bank create Successful", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(CreateBank.this, HomeActivity.class));
-                finish();
+                Intent i = new Intent(CreateBank.this, HomeActivity.class);
+                // set the new task and clear flags
+                i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(i);
             } else {
                 Toast.makeText(CreateBank.this, "Failed try again", Toast.LENGTH_LONG).show();
             }
         }
     }
 
+    //keyboardHide method
     public static void hideSoftKeyboard(Activity activity) {
         InputMethodManager inputMethodManager =
                 (InputMethodManager) activity.getSystemService(

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Bank App</string>
+    <string name="app_name">Bini Bank App</string>
     <string name="create_new_bank">Create new bank</string>
     <string name="view_bank_list">View bank list</string>
     <string name="transfer_money">Transactions</string>

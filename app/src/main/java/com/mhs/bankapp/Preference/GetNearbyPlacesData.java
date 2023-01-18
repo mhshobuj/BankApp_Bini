@@ -13,6 +13,10 @@ import com.mhs.bankapp.R;
 import java.util.HashMap;
 import java.util.List;
 
+/**
+ * Developed by Md Mehedi Hasan
+ * Date: 18-01-23
+ */
 public class GetNearbyPlacesData extends AsyncTask<Object, String, String> {
     String googlePlacesData;
     GoogleMap mMap;

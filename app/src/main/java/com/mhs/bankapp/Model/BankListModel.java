@@ -1,5 +1,9 @@
 package com.mhs.bankapp.Model;
 
+/**
+ * Developed by Md Mehedi Hasan
+ * Date: 18-01-23
+ */
 public class BankListModel {
     private int bank_id;
     private String bank_name;

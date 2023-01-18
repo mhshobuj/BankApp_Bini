@@ -1,5 +1,9 @@
 package com.mhs.bankapp.Common;
 
+/**
+ * Developed by Md Mehedi Hasan
+ * Date: 18-01-23
+ */
 public class Constants {
     public static final String DBNAME = "bankApp.db";
     public static final String BANK_CREATE_TABLE_NAME = "bank_create";

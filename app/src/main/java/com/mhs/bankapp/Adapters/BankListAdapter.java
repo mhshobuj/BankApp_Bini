@@ -21,8 +21,11 @@ import com.mhs.bankapp.Ui.BankDetailsAndUpdate;
 
 import java.util.ArrayList;
 
+/**
+ * Developed by Md Mehedi Hasan
+ * Date: 18-01-23
+ */
 public class BankListAdapter extends RecyclerView.Adapter<BankListAdapter.MyViewHolder> {
-
     private ArrayList<BankListModel> bankListModels;
     private Context context;
 
@@ -82,7 +85,6 @@ public class BankListAdapter extends RecyclerView.Adapter<BankListAdapter.MyView
     public interface RecyclerViewClickListener {
         void onClick(View view, int pos);
     }
-
 
     public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         TextView txtBankName, txtBranchName, txtRoutingNumber;
