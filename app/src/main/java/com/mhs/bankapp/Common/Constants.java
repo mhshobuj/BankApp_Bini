@@ -19,5 +19,5 @@ public class Constants {
     public static final String TRANSACTION_T_AMOUNT = "t_amount";
     public static final String TRANSACTION_DATE_TIME = "date_time";
     public static final String SEARCH_TYPE = "bank";
-    public static final String GOOGLE_MAP_API_KEY = "AIzaSyBtfZ284go38E6Kx5O9MoByIGqmKlvG-UU";
+    public static final String GOOGLE_MAP_API_KEY = "YOU_API_KEY";
 }
